@@ -144,7 +144,7 @@ a, a:hover {
   background-position-x: -200px;
   min-height: 100px;
   min-width: 100px;
-  max-width: 620px;
+  max-width: 550px;
   height: 100%;
   -webkit-transition: 1s;
   transition: 1s;
@@ -243,6 +243,7 @@ a, a:hover {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 35vw;
             flex: 0 0 35vw;
+    max-width: 350px;
   }
 }
 
@@ -253,5 +254,27 @@ a, a:hover {
 
 .item-container h1 {
   font-size: 1.3em;
+}
+
+.tag {
+  border-radius: 5px;
+  background-color: grey;
+  padding: .4em 1em;
+  color: white;
+  font-size: x-small;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.fashion {
+  background-color: #d83f93;
+}
+
+.lifestyle {
+  background-color: #ea8f3b;
+}
+
+.health {
+  background-color: #6941d9;
 }
 /*# sourceMappingURL=style.css.map */
