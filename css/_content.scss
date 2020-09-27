@@ -1,0 +1,132 @@
+$image1-left: -200px;
+
+
+
+.content-container {
+  display: flex;
+  margin: 1.5em 1em;
+}
+
+.outer-container {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.item-container:first-of-type {
+  height: 58%;
+}
+
+.item-container:last-of-type {
+  height: 38%;
+}
+
+.item-container {
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  position: relative;
+}
+
+.item-1 {
+  background-image: url("../images/image1.jpg");
+  background-position-x: $image1-left;
+  min-height: 100px;
+  min-width: 100px;
+  max-width: 620px;
+  height: 100%;
+  transition: 1s;
+}
+
+.item-2 {
+  background-image: url("../images/image2.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+  min-width: 100px;
+  transition: 1s;
+}
+
+.item-3 {
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 68, 0, 0.753);
+  background-image: url("../images/image1.png");
+  background-blend-mode: multiply;
+  filter: brightness(130%);
+  min-height: 100px;
+  min-width: 100px;
+  height: 49%;
+  transition: 1s;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.item-content {
+  margin: auto 1em 1em 1em;
+}
+
+
+@include atSmall {
+
+  .content-container {
+    flex-direction: column;
+  }
+  
+}
+
+@include atMedium {
+
+  .content-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .outer-container {
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item-1:hover {
+    animation: ease-in-out;
+    filter: brightness(50%);
+    background-position-x: $image1-left - 30px;
+  }
+
+  .item-2:hover {
+    animation: ease-in-out;
+    filter: brightness(60%);
+    background-position-x: 0px;
+  }
+
+  .item-3:hover {
+    filter: brightness(90%);
+  }
+
+  .outer-container:first-of-type {
+    // flex: 0 0 60vw;
+    margin-right: 20px;
+  }
+  
+  .outer-container:last-of-type {
+    flex: 0 0 35vw;
+  }
+  
+}
+
+.title-info > h1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.item-container h1 {
+  font-size: 1.3em;
+}
+
+

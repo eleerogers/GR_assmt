@@ -1,0 +1,78 @@
+.nav-link {
+  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: bold;
+}
+
+.navbar-collapse > .navbar-nav > .nav-item > .nav-link {
+  color: white
+}
+
+.navbar-custom {
+  background-image: linear-gradient(to right, $banner-red , $banner-orange);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  background-color: $hamburger-orange;
+  border: none;
+  outline-color: $banner-orange;
+} 
+
+h1 {
+  color: white;
+  font-size: 2em;
+}
+
+div.collapse {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+ul {
+  justify-content: space-between;
+}
+
+.dropdown-divider {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.dropdown-menu {
+  padding: 0;
+}
+
+.dropdown-item {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+ul.social {
+  list-style-type: none;
+  margin: auto 0;
+  float: right;
+  display: none;
+  @include atMedium {
+    display: block;
+  }
+}
+
+.social-item {
+  list-style: none;
+  margin: 0 .5em;
+  float: left;
+}
+
+a, a:hover {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

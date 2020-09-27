@@ -1,0 +1,31 @@
+// @import "reset";
+
+$banner-red: #ed456b;
+$banner-orange: #f07b3d;
+$hamburger-orange: #e84a32;
+$light-grey: #F8F5F0;
+$small: 0px;
+$medium: 768px;
+
+@mixin atSmall{
+  @media (min-width: $small){
+    @content;
+  }
+}
+
+@mixin atMedium{
+  @media (min-width: $medium){
+    @content;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  min-width: 320px;
+  color: red;
+}
+
+@import "navbar";
+@import "content";
+
