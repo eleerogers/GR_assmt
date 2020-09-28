@@ -10,6 +10,7 @@
 
 .navbar-custom {
   background-image: linear-gradient(to right, $banner-red , $banner-orange);
+  height: 60px;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -60,6 +61,9 @@ ul.social {
   list-style: none;
   margin: 0 .5em;
   float: left;
+  height: inherit;
+  display: flex;
+  align-items: center;
 }
 
 @include atMedium {
@@ -73,6 +77,7 @@ ul.social {
 
   body > .navbar > .container {
     flex-direction: row-reverse;
+    height: 60px;
   }
 
   .navbar-light .navbar-nav .nav-link:hover,
@@ -85,7 +90,7 @@ ul.social {
   }
 
   .dropdown-menu {
-    margin: .47rem 0 0;
+    margin: .76rem 0 0;
     border: 0;
     padding: 0;
     box-shadow: 0px 3px 6px 0px rgba(80,80,80,0.5);
@@ -113,6 +118,10 @@ ul.social {
       color: white;
     }
   }
+
+  .nav-item {
+    height: inherit;
+  }
 }
 
 .container {
@@ -123,7 +132,7 @@ ul.social {
 }
 
 .nav-inner-container {
-  max-width: 540px;
+  max-width: 550px;
 }
 
 @include atSmall {
@@ -136,7 +145,7 @@ ul.social {
     margin-left: -16px;
     margin-right: -16px;
     margin-bottom: -10px;
-    margin-top: 8px;
+    margin-top: 0;
     justify-self: stretch;
   }
 
@@ -145,7 +154,7 @@ ul.social {
     background-color: #f8f8f8;
     margin: 0 auto;
     border-bottom: 1px solid #f3f3f3;
-    max-width: 540px;
+    max-width: 550px;
   }
 
   .nav-item {
@@ -188,7 +197,7 @@ ul.social {
   }
 
   .nav-container {
-    width: 540px;
+    width: 550px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -217,11 +226,43 @@ ul.social {
 
 a > .fas, .fab {
   color: white;
+  font-size: .8em;
+  padding: 0 .2em;
 }
 
 ul.social {
   margin-left: auto;
   margin-bottom: auto;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255,255,255,0.06);
+  padding-left: .5em;
+  border-left: 1px solid #f2826a;
+  border-right: 1px solid #f2826a;
+  // @media (min-width: 977px) {
+  //   margin-right: .2em;
+  // }
 }
 
+.social-item:last-of-type {
+  margin-right: 0;
+}
 
+.navbar {
+  padding: 0 1rem;
+}
+
+.nav-container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  padding: 0 1.3em;
+  margin: 0 .5em;
+  background-color: rgba(255,255,255,0.06);
+  border-left: 1px solid #edada0b5;
+  border-right: 2px solid #edada0b5;
+}

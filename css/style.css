@@ -18,6 +18,7 @@ body {
 .navbar-custom {
   background-image: -webkit-gradient(linear, left top, right top, from(#ed456b), to(#f07b3d));
   background-image: linear-gradient(to right, #ed456b, #f07b3d);
+  height: 60px;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -70,6 +71,13 @@ ul.social {
   list-style: none;
   margin: 0 .5em;
   float: left;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -84,6 +92,7 @@ ul.social {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    height: 60px;
   }
   .navbar-light .navbar-nav .nav-link:hover,
   .navbar-light .navbar-nav .nav-link,
@@ -98,7 +107,7 @@ ul.social {
     color: white;
   }
   .dropdown-menu {
-    margin: .47rem 0 0;
+    margin: .76rem 0 0;
     border: 0;
     padding: 0;
     -webkit-box-shadow: 0px 3px 6px 0px rgba(80, 80, 80, 0.5);
@@ -125,6 +134,9 @@ ul.social {
   .navbar .navbar-nav .nav-link-container > .dropdown-menu > a:hover {
     color: white;
   }
+  .nav-item {
+    height: inherit;
+  }
 }
 
 .container {
@@ -142,7 +154,7 @@ ul.social {
 }
 
 .nav-inner-container {
-  max-width: 540px;
+  max-width: 550px;
 }
 
 @media (max-width: 767px) {
@@ -154,7 +166,7 @@ ul.social {
     margin-left: -16px;
     margin-right: -16px;
     margin-bottom: -10px;
-    margin-top: 8px;
+    margin-top: 0;
     -ms-grid-column-align: stretch;
         justify-self: stretch;
   }
@@ -164,7 +176,7 @@ ul.social {
     background-color: #f8f8f8;
     margin: 0 auto;
     border-bottom: 1px solid #f3f3f3;
-    max-width: 540px;
+    max-width: 550px;
   }
   .nav-item {
     padding: 0 1em;
@@ -200,7 +212,7 @@ ul.social {
             justify-content: center;
   }
   .nav-container {
-    width: 540px;
+    width: 550px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -233,11 +245,50 @@ ul.social {
 
 a > .fas, .fab {
   color: white;
+  font-size: .8em;
+  padding: 0 .2em;
 }
 
 ul.social {
   margin-left: auto;
   margin-bottom: auto;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding-left: .5em;
+  border-left: 1px solid #f2826a;
+  border-right: 1px solid #f2826a;
+}
+
+.social-item:last-of-type {
+  margin-right: 0;
+}
+
+.navbar {
+  padding: 0 1rem;
+}
+
+.nav-container {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search {
+  padding: 0 1.3em;
+  margin: 0 .5em;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-left: 1px solid #edada0b5;
+  border-right: 2px solid #edada0b5;
 }
 
 .content-container {
@@ -392,7 +443,7 @@ ul.social {
     max-width: 350px;
   }
   .container {
-    max-width: 960px;
+    max-width: 952px;
   }
 }
 
