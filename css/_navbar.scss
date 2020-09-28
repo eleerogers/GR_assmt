@@ -144,7 +144,8 @@ ul.social {
     justify-self: stretch;
     background-color: #f8f8f8;
     margin: 0 auto;
-    border-bottom: 1px solid #f3f3f3
+    border-bottom: 1px solid #f3f3f3;
+    max-width: 540px;
   }
 
   .nav-item {
@@ -178,6 +179,19 @@ ul.social {
 
   .container {
     max-width: none;
+  }
+
+  .navbar {
+    .container {
+      justify-content: center;
+    }
+  }
+
+  .nav-container {
+    width: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .dropdown-menu {
