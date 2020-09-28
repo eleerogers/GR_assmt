@@ -4,7 +4,7 @@ $image1-left: -200px;
 
 .content-container {
   display: flex;
-  margin: 1.5em 1em;
+  margin: 1em;
 }
 
 .outer-container {
@@ -12,6 +12,7 @@ $image1-left: -200px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .item-container:first-of-type {
@@ -31,7 +32,9 @@ $image1-left: -200px;
 
 .item-1 {
   background-image: url("../images/image1.jpg");
-  background-position-x: $image1-left;
+  background-size: cover;
+  background-position: center;
+  // background-position-x: $image1-left;
   min-height: 100px;
   min-width: 100px;
   max-width: 550px;
@@ -46,6 +49,8 @@ $image1-left: -200px;
   min-height: 100px;
   min-width: 100px;
   transition: 1s;
+  max-width: 550px;
+  width: 100%;
 }
 
 .item-3 {
@@ -59,6 +64,7 @@ $image1-left: -200px;
   min-width: 100px;
   height: 49%;
   transition: 1s;
+  max-width: 550px;
 }
 
 .item {
@@ -119,6 +125,9 @@ $image1-left: -200px;
     max-width: 350px;
   }
   
+  .container {
+    max-width: 960px;
+  }
 }
 
 .title-info > h1 {
@@ -153,3 +162,6 @@ $image1-left: -200px;
 }
 
 
+ul {
+  padding-inline-start: 0;
+}

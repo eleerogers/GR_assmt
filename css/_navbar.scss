@@ -20,18 +20,25 @@
   background-color: $hamburger-orange;
   border: none;
   outline-color: $banner-orange;
+  margin: .3em 0;
+  margin-left: 1px;
+  border-radius: 3px;
 } 
+
+.fa-bars {
+  color: white;
+}
 
 h1 {
   color: white;
   font-size: 2em;
 }
 
-div.collapse {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+// div.collapse {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: flex-start;
+// }
 
 ul {
   justify-content: space-between;
@@ -55,10 +62,6 @@ ul.social {
   list-style-type: none;
   margin: auto 0;
   float: right;
-  display: none;
-  @include atMedium {
-    display: block;
-  }
 }
 
 .social-item {
@@ -67,12 +70,93 @@ ul.social {
   float: left;
 }
 
-a, a:hover {
-  color: white;
+@include atMedium {
+  .navbar .container a, a:hover {
+    color: white;
+  }
+  
+  .navbar .navbar-nav .nav-link-container a, a:hover {
+    color: white;
+  }
 }
 
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: none;
 }
+
+.nav-inner-container {
+  max-width: 540px;
+}
+
+  // .nav-item, .navbar-nav, .navbar-collapse {
+  //   display: flex;
+  //   justify-content: stretch;
+  //   align-items: stretch;
+  // }
+
+@include atSmall {
+  .navbar-collapse {
+    background-color: white;
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-bottom: -10px;
+    margin-top: 8px;
+    justify-self: stretch;
+  }
+
+
+  .nav-link-container {
+    justify-self: stretch;
+    background-color: #f8f8f8;
+    // width: 90vw;
+    margin: 0 auto;
+    border-bottom: 1px solid #f3f3f3
+  }
+
+  .nav-item {
+    padding: 0 1em;
+  }
+
+  .nav-item:last-of-type > .nav-link-container {
+    border: none;
+  }
+
+  .dropdown-toggle::after {
+    // display: inline-block;
+    float: right;
+    margin-right: 2em;
+    margin-top: .4em;
+    vertical-align: .255em;
+    content: "";
+    /* border-top: .3em solid; */
+    /* border-right: .3em solid transparent; */
+    /* border-bottom: 0; */
+    /* border-left: .3em solid transparent; */
+    border: solid #919191;
+    padding: 2px;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #505050;
+  }
+
+  .container {
+    max-width: none;
+  }
+}
+
+a > .fas, .fab {
+  color: white;
+}
+
+ul.social {
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
