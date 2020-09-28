@@ -90,7 +90,7 @@ ul.social {
   }
 
   .dropdown-menu {
-    margin: .76rem 0 0;
+    margin: 0;
     border: 0;
     padding: 0;
     box-shadow: 0px 3px 6px 0px rgba(80,80,80,0.5);
@@ -119,8 +119,30 @@ ul.social {
     }
   }
 
-  .nav-item {
+  .nav-item, .nav-link, .nav-link-container, .navbar-nav, .navbar-collapse {
     height: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-expand-md .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+
+  .lifestyleDropdown {
+    margin: 0 -60px 0;
+  }
+
+  .dropdown-menu, .dropdown-menu.show {
+    display: none;
+  }
+
+  .home-menu:hover .dropdown-menu, .home-menu > .dropdown-menu:hover {
+    display: block;
+  }
+
+  .lifestyle-menu:hover .dropdown-menu, .lifestyle-menu > .dropdown-menu:hover {
+    display: block;
   }
 }
 
