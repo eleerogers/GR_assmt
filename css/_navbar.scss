@@ -84,6 +84,15 @@ ul.social {
   body > .navbar > .container {
     flex-direction: row-reverse;
   }
+
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link,
+  .navbar-light .navbar-nav .show > .nav-link {
+    color: white;
+    &:hover, &:focus {
+      color: white;
+    }
+  }
 }
 
 .container {
