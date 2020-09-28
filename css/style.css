@@ -81,6 +81,12 @@ ul.social {
   .navbar .navbar-nav .nav-link-container a, a:hover {
     color: white;
   }
+  body > .navbar > .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 
 .container {

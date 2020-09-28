@@ -78,6 +78,10 @@ ul.social {
   .navbar .navbar-nav .nav-link-container a, a:hover {
     color: white;
   }
+
+  body > .navbar > .container {
+    flex-direction: row-reverse;
+  }
 }
 
 .container {
