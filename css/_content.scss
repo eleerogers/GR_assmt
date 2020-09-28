@@ -31,10 +31,15 @@ $image1-left: -200px;
 }
 
 .item-1 {
-  background-image: url("../images/image1.jpg");
+  background: 
+    linear-gradient(
+    rgba(0, 0, 0, 0), 
+      75%, 
+      rgba(0, 0, 0, 1)
+    ),
+    url("../images/image1.jpg");
   background-size: cover;
   background-position: center;
-  // background-position-x: $image1-left;
   min-height: 100px;
   min-width: 100px;
   max-width: 550px;
@@ -43,7 +48,13 @@ $image1-left: -200px;
 }
 
 .item-2 {
-  background-image: url("../images/image2.png");
+  background:
+    linear-gradient(
+    rgba(0, 0, 0, 0), 
+      75%, 
+      rgba(0, 0, 0, 1)
+    ),
+    url("../images/image2.png");
   background-size: cover;
   background-position: center;
   min-height: 100px;
@@ -161,7 +172,19 @@ $image1-left: -200px;
   background-color: #6941d9;
 }
 
-
 ul {
   padding-inline-start: 0;
+}
+
+.white {
+  color: white;
+}
+
+.item-info {
+  color: white;
+  font-size: .8em;
+}
+
+.fa-fire {
+  color: $hamburger-orange;
 }

@@ -266,7 +266,8 @@ ul.social {
 }
 
 .item-1 {
-  background-image: url("../images/image1.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(75%), to(black)), url("../images/image1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0), 75%, black), url("../images/image1.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100px;
@@ -278,7 +279,8 @@ ul.social {
 }
 
 .item-2 {
-  background-image: url("../images/image2.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(75%), to(black)), url("../images/image2.png");
+  background: linear-gradient(rgba(0, 0, 0, 0), 75%, black), url("../images/image2.png");
   background-size: cover;
   background-position: center;
   min-height: 100px;
@@ -414,5 +416,18 @@ ul.social {
 ul {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+}
+
+.white {
+  color: white;
+}
+
+.item-info {
+  color: white;
+  font-size: .8em;
+}
+
+.fa-fire {
+  color: #e84a32;
 }
 /*# sourceMappingURL=style.css.map */
