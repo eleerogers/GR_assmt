@@ -75,6 +75,17 @@ ul.social {
     color: white;
   }
 
+  .nav-link-container {
+    border-left: 1px solid rgba(255,255,255,0);
+    border-right: 1px solid rgba(255,255,255,0);
+  }
+
+  .nav-link-container:hover {
+    background-color: rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    border-right: 1px solid rgba(255,255,255,0.2);
+  }
+
   body > .navbar > .container {
     flex-direction: row-reverse;
     height: 60px;

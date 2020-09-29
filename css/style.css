@@ -87,6 +87,15 @@ ul.social {
   .navbar .navbar-nav .nav-link-container a, a:hover {
     color: white;
   }
+  .nav-link-container {
+    border-left: 1px solid rgba(255, 255, 255, 0);
+    border-right: 1px solid rgba(255, 255, 255, 0);
+  }
+  .nav-link-container:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
   body > .navbar > .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
