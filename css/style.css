@@ -135,13 +135,50 @@ ul.social {
     color: white;
     background-color: #e84a32;
   }
+  .navbar .navbar-nav .nav-link-container > .dropdown-menu > .dropright > a,
   .navbar .navbar-nav .nav-link-container > .dropdown-menu > a {
     color: #505050;
     font-size: .7em;
     font-weight: bold;
   }
+  .navbar .navbar-nav .nav-link-container > .dropdown-menu > .dropright > a:hover,
   .navbar .navbar-nav .nav-link-container > .dropdown-menu > a:hover {
     color: white;
+  }
+  .navbar .navbar-nav .lifestyle-menu > .dropdown-menu > a {
+    color: #505050;
+    background-color: white;
+    font-size: .8em;
+    font-weight: bold;
+  }
+  .navbar .navbar-nav .lifestyle-menu > .dropdown-menu > a:hover {
+    color: #e84a32;
+    background-color: #f8f8f8;
+  }
+  .dropdown-menu > .dropright {
+    color: #505050;
+    background-color: white;
+    padding: 1.2em;
+    font-weight: bold;
+    font-size: 1.13em;
+  }
+  .lifestyleDropdown > .dropright {
+    background-color: white;
+  }
+  .lifestyleDropdown > .dropright:hover {
+    background-color: #f8f8f8;
+  }
+  .lifestyleDropdown > .dropright:hover a {
+    color: #e84a32;
+  }
+  .lifestyleDropdown > .dropright a.dropdown-toggle:hover {
+    text-decoration: none;
+  }
+  .navbar .navbar-nav .nav-link-container > .dropdown-menu > .dropright:hover {
+    cursor: pointer;
+  }
+  .navbar .navbar-nav .nav-link-container > .dropdown-menu > .dropright:hover a {
+    color: #e84a32;
   }
   .nav-item, .nav-link, .nav-link-container, .navbar-nav, .navbar-collapse {
     height: inherit;
@@ -157,6 +194,19 @@ ul.social {
   }
   .lifestyleDropdown {
     margin: 0 -60px 0;
+    border-radius: 0;
+  }
+  .lifestyleDropdown .dropdown-item {
+    padding: 1em 1.7em;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .lifestyle-menu > .lifestyleDropdown {
+    padding: 1em 0;
+  }
+  .lifestyle-menu > .lifestyleDropdown .health {
+    padding: .5em 1.2em;
   }
   .dropdown-menu, .dropdown-menu.show {
     display: none;
@@ -270,6 +320,16 @@ ul.social {
   .navbar-nav > .nav-item > .show > .nav-link:hover {
     color: white;
     background-color: #e84a32;
+  }
+  .lifestyleDropdown > .health {
+    background-color: #f8f8f8;
+  }
+  .lifestyleDropdown > .health a {
+    color: #505050;
+  }
+  .lifestyleDropdown > .health:hover a {
+    color: white;
+    text-decoration: none;
   }
 }
 

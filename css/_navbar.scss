@@ -121,6 +121,7 @@ ul.social {
     }
   }
 
+  .navbar .navbar-nav .nav-link-container > .dropdown-menu > .dropright > a,
   .navbar .navbar-nav .nav-link-container > .dropdown-menu > a {
     color: #505050;
     font-size: .7em;
@@ -129,6 +130,58 @@ ul.social {
       color: white;
     }
   }
+
+  .navbar .navbar-nav .lifestyle-menu > .dropdown-menu > a {
+    color: #505050;
+    background-color: white;
+    font-size: .8em;
+    font-weight: bold;
+    &:hover {
+      color: $hamburger-orange;
+      background-color: #f8f8f8;
+    }
+  }
+
+  .dropdown-menu > .dropright {
+    // padding: 0;
+    color: #505050;
+    background-color: white;
+    padding: 1.2em;
+    font-weight: bold;
+    font-size: 1.13em;
+    // &:hover {
+    //   a {
+    //     color: $hamburger-orange;
+    //     text-decoration: none;
+    //   }
+    //   background-color: #f8f8f8;
+    // }
+  }
+  .lifestyleDropdown > .dropright {
+    background-color: white;
+    &:hover {
+      background-color: #f8f8f8;
+      a {
+        color: $hamburger-orange;
+      }
+    }
+    a.dropdown-toggle:hover {
+      
+      text-decoration: none;
+    } 
+  }
+
+  .navbar .navbar-nav .nav-link-container > .dropdown-menu > .dropright:hover {
+    a {
+      color: $hamburger-orange;
+    }
+    cursor: pointer;
+  }
+  // .dropdown-menu > .dropright:hover a {
+  //   color: $hamburger-orange;
+  //   text-decoration: none;
+  //   background-color: #f8f8f8;
+  // }
 
   .nav-item, .nav-link, .nav-link-container, .navbar-nav, .navbar-collapse {
     height: inherit;
@@ -142,6 +195,21 @@ ul.social {
 
   .lifestyleDropdown {
     margin: 0 -60px 0;
+    border-radius: 0;
+    .dropdown-item {
+      padding: 1em 1.7em;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .lifestyle-menu > .lifestyleDropdown {
+    padding: 1em 0;
+    .health {
+      padding: .5em 1.2em;
+    }
   }
 
   .dropdown-menu, .dropdown-menu.show {
@@ -253,6 +321,19 @@ ul.social {
     &:hover {
       color: white;
       background-color: $hamburger-orange;
+    }
+  }
+
+  .lifestyleDropdown > .health {
+    background-color: #f8f8f8;
+    a {
+      color: #505050;
+    }
+    &:hover {
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }
