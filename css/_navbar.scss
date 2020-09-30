@@ -93,7 +93,7 @@ ul.social {
 
   .navbar-light .navbar-nav .nav-link:hover,
   .navbar-light .navbar-nav .nav-link,
-  .navbar-light .navbar-nav .show > .nav-link {
+  .navbar-light .navbar-nav .active > .nav-link {
     color: white;
     &:hover, &:focus {
       color: white;
@@ -188,7 +188,7 @@ ul.social {
     } 
   }
 
-  .lifestyleDropdown > .show {
+  .lifestyleDropdown > .active {
     a {
       color: $hamburger-orange;
     }
@@ -225,12 +225,12 @@ ul.social {
 
   .lifestyle-menu > .lifestyleDropdown {
     padding: 1em 0;
-    .show {
+    .active {
       background-color: #f8f8f8;
     }
   }
 
-  .dropdown-menu, .dropdown-menu.show {
+  .dropdown-menu, .dropdown-menu.active {
     display: none;
   }
 
@@ -248,7 +248,7 @@ ul.social {
     display: none;
   }
 
-  .lifestyle-menu > .lifestyleDropdown > .show > .lifestyle-option-submenu {
+  .lifestyle-menu > .lifestyleDropdown > .active > .lifestyle-option-submenu {
     display: flex;
     justify-content: flex-start;
   }
@@ -262,7 +262,7 @@ ul.social {
     display: block;
   }
 
-  .navbar .navbar-nav .nav-link-container > .dropdown-menu > .show > a {
+  .navbar .navbar-nav .nav-link-container > .dropdown-menu > .active > a {
     color: $hamburger-orange;
   }
 }
@@ -359,7 +359,7 @@ ul.social {
   }
   
   .nav-link-container > .dropdown-menu > .dropdown-item,
-  .navbar-nav > .nav-item > .show > .nav-link {
+  .navbar-nav > .nav-item > .active > .nav-link {
     color: #505050;
     &:hover {
       color: white;
