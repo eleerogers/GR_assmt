@@ -425,34 +425,39 @@ ul.social {
   border-right: 2px solid #edada0b5;
 }
 
-.lifestyle-option-submenu-item1 {
-  background-image: url("../images/image1.jpg");
-  background-size: cover;
-  background-position: center;
+.submenu-pic-container {
   height: 125px;
   width: 175px;
-  transition: 1s;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
   border-radius: 5px;
+}
+
+.submenu-pic-styles {
+  background-size: cover;
+  background-position: center;
+  animation: ease-in-out;
+  transition: all .5s;
+  height: 100%;
+  width: 100%;
+}
+
+.lifestyle-option-submenu-item1 {
+  background-image: url("../images/image1.jpg");
 }
 
 .lifestyle-option-submenu-item2 {
   background-image: url("../images/image1.png");
-  background-size: cover;
-  background-position: center;
-  height: 125px;
-  width: 175px;
-  transition: 1s;
-  border-radius: 5px;
 }
 
 .lifestyle-option-submenu-item3 {
   background-image: url("../images/image2.png");
-  background-size: cover;
-  background-position: center;
-  height: 125px;
-  width: 175px;
-  transition: 1s;
-  border-radius: 5px;
+}
+
+.submenu-item-container:hover .submenu-pic-styles,
+.submenu-item-container:focus .submenu-pic-styles {
+  transform: scale(1.15);
 }
 
 h4, h7 {
