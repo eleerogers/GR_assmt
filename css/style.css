@@ -181,19 +181,16 @@ ul.social {
     top: -66px;
   }
   .dropright .lifestyle-menu-3 {
-    top: -116px;
+    top: -115px;
   }
   .dropright .lifestyle-menu-4 {
-    top: -166px;
+    top: -165px;
   }
   .lifestyleDropdown > .dropright {
     background-color: white;
   }
   .lifestyleDropdown > .dropright a.dropdown-toggle:hover {
     text-decoration: none;
-  }
-  .lifestyleDropdown > .show {
-    background-color: #f8f8f8;
   }
   .lifestyleDropdown > .show a {
     color: #e84a32;
